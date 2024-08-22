@@ -1,0 +1,75 @@
+    <html>
+        <head>
+            <title>Student Form</title>
+            <link rel="stylesheet" href="StudentFormStyles.css">
+            </head>
+
+            <body>
+            
+                <h1>Student Form</h1>
+                <form id="studentform" action="" method="get">
+                    <div>
+                        <table>
+                        <div><tr><th><label for="name">Name</label></th>
+                        <td><input type="text" id="name" required></td></tr></div>
+                        <div><tr><th ><label for="id">ID</label></th>
+                        <td><input type="text" id="id" required></td></tr></div>
+                    <div><tr><th><label for="dob">Date of Birth</label></th>
+                    <td><input type="date" id="dob" required></td></tr></div>
+                    <div><tr><th><label for="age">Age</label></th>
+                    <td><input type="number" id="age" required></td></tr></div>
+                    <div><tr><th><label for="gender">Gender</label></th><td>
+                    <input type="radio" name="gender" id="gender_male" value="Male">Male
+                        <input type="radio" name="gender" id="gender_female"  value="Female">Female
+                    <input type="radio" name="gender" id="gender_others" value="Others">Others</td></tr></div>
+                        <div><tr><th><label for="contact">Contact Number</label></th>
+                        <td><input type="text" id="contact" required></td></tr></div>
+                        
+                        <div><tr><th><label for="branch">Branch</label></th>
+                            <td><input type="text" id="branch" required></td></tr></div>
+                            <div><tr><th><label for="hobbies">Hobbies</label></th>
+                            <td><input type="checkbox" name="hobbies"  value="Singing">Singing<br>
+                            <input type="checkbox" name="hobbies" " value="Dancing">Dancing<br>
+                        <input type="checkbox" name="hobbies"  value="Listening Music">Listening Music<br>
+                    <input type="checkbox" value="Drawing" name="hobbies" >Drawing<br>
+                <input type="checkbox" value="Reading Books" name="hobbies" >Reading Books<br>
+            <!-- Others<input type="text" name="hobbies"  placeholder="Ex:- Teaching"> --></td></div>
+                            <tr><th><label for="subjects">Subjects</label></th>
+                               
+                                <td id="subjects-container">
+                                    <!-- <label for="subjects-names">Subjects</label> -->
+
+                                    <select id="select-subject" name="subjects[]">
+                                        <option>Telugu</option>
+                                    <option>Hindi</option>
+                                <option>English</option>
+                            <option>Maths</option>
+                        <option>Physics</option>
+                    <option>Biology</option>
+                <option>Social Studies</option>
+            <option>Computers</option>
+        <option>General Knowledge(G.K)</option>
+        <option>C Programming</option>
+        <option>Python Programming</option>
+        <option>OOPS through C++</option>
+        <option>Java</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Java Script</option></select>
+                                    <!-- <input type="text" id="subject-name" name="subjects[]" placeholder="Subject Name">  -->
+
+                                    
+                                    <input type="number" id="subject-marks" name="marks[]" placeholder="Marks">
+                                    <button type="button" onclick="addSubject()">Add Subject & Marks</button>
+                                </td></tr>
+                
+            
+                </table><br>
+            <center> <input type="submit" value="Submit" onclick="displayAll()" class="btn" ></center>
+                </div>
+
+                </form>
+            
+            <script src="ScriptStudent.js"></script>
+                </body>
+    </html>
